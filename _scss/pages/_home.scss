@@ -10,7 +10,7 @@
     }
 
     .p-wrap {
-      padding: 0.5em 6em ;
+      padding: $spacing-ml $spacing-m;
       background: $main-color; 
       transition: all .15s ease-in;
       &:active { 
@@ -18,7 +18,7 @@
       }
       &:hover {
         background: lighten($main-color, 3%); 
-        padding-left: 12.5em;
+        padding-left: $spacing-m + $spacing-s;
         &::after {
           content:'\2192'; 
           margin-left: $spacing-xs;
@@ -46,7 +46,7 @@
     }
 
     a {
-      color: 333; 
+      color: white; 
       text-decoration: none;
     }
 
