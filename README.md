@@ -1,63 +1,63 @@
-# hikari
+Scribble
+========
 
-Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-savvy bloggers who wants to get started with Jekyll in a very minimal way. 
+A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
+<br />
+[More themes](https://github.com/muan/muan.github.com/releases).
 
-- SCSS!
-- Responsive
-- Lightweight (no JS library has been abused here)
+![screenshot](http://scribble.muan.co/images/screenshot.png)
 
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot.png)
+There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind. 
 
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-2.png)
+This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme. 
 
-![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-3.png)
+The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
 
-[View demo](http://m3xm.github.io/hikari-for-Jekyll)
+---
 
+### Get started
 
-### How to install
+1. [Fork the repository](https://github.com/muan/scribble/fork).
+2. Clone the repository to your computer.<br /> `git clone https://github.com/username/scribble`
+3. `bundle install`
+4. **Using older versions of Jekyll**<br />
+  Build and run jekyll using `jekyll --server --auto`.<br />
+  **Using [Jekyll 1.0](http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/)**<br />
+  Build Jekyll using `jekyll build`.<br />
+  Then run Jekyll using `jekyll serve --watch`, go to http://localhost:4000 for your site.
 
-1. Clone this repo
-2. Customize \_config.yml and replace all dummy posts by yours
-3. Change your profile picture in `~/assets/img/avatar.jpg`
-3. Publish (I recommend [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages), it's free)
+---
 
+### Make it yours
 
-### Development
+1. I have extract most user specific information to `_config.yml`, you should be able to set up almost everything from it.
+2. Change about.md for blog intro.
+3. For domain settings, see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-- `master` for development and pull requests.
-- `gh-pages` for the demo page; don't bother.
+---
 
+### GitHub Pages stuff
 
-#### Running locally
+The `gh-pages` branch of this repository is [the project page](http://scribble.muan.co), which **should not** be used as your blog, so use `master` branch for your blog. This is assuming your blog repository will be called [your-username].github.io, if tis is not the case, you will need to delete the `gh-pages` repository and create a branch off the `master` branch. Hope that's clear.
 
-1. Clone this repo
-2. Install required dependencies with [Bundler](http://bundler.io/)
+---
 
-        bundle install
-3. Run the site with Jekyll
+### Options
 
-        bundle exec jekyll serve --watch
-4. Visit the site at [http://localhost:4000](http://localhost:4000)
+When writing a post, there are 3 options you can add to the header.
 
+1. **disqus: y**<br />
+  If disqus is set to 'y', at the end of the post there will be a disqus thread, just like this one. To use disqus, you MUST [set up your own disqus account](http://disqus.com/).
 
-### Author
+2. **share: y**<br />
+  An option for showing tweet and like button under a post.
 
-**Mathieu Mayer-Mazzoli**
-- <http://m3xm.github.io>
-- <http://twitter.com/mx3m>
-- <http://www.dribbble.com/m3xm>
+3. **date**: 2013-05-06 18:07:17<br />
+  Date is not a required header since Jekyll reads the file name for date, this was added in only for the **signoff time**. (as shown at the end of this post) If you don't want the signoff time, go into `/includes/signoff.html` remove the `<span>`, and remove `{% include signoff.html %}` from `/layouts/post.html`.
 
+---
 
-### Main Contributors
+### The end
 
-**Ross Allen**
-- <https://github.com/ssorallen>
-
-**Julien Rousseau**
-- <https://github.com/evarouss>
-
-
-### License
-
-Open source. [MIT license](http://opensource.org/licenses/MIT).
+Like it? [Tell me](http://twitter.com/muanchiou).<br/>
+Question? [Use GitHub Issues](https://github.com/muan/scribble/issues).
